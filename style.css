@@ -90,32 +90,17 @@ select{
     size: 1.1;
   }
 
+  #clock {
+    font-family: 'Roboto', sans-serif;
+    color: #ff00ea;
+    font-size: 56px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 
 img{
     max-width: 103px;
 }
-
-@media screen and (max-width: 530px) {
-    .wrapper{
-      padding: 25px 25px 33px;
-      width: 100%;
-    }
-    .wrapper img{
-      max-width: 98px;
-    }
-    .wrapper h1{
-      font-size: 35px;
-      margin: 25px 0;
-    }
-    .select select{
-      height: 48px;
-      font-size: 17px;
-      width: 80px;
-    }
-    .wrapper button{
-      padding: 15px 0;
-      font-size: 18px;
-    }
-  }
 
 
