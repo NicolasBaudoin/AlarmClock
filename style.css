@@ -1,0 +1,121 @@
+/*===== IMPORT ====== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: purple;
+}
+
+body, .wrapper, .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.wrapper{
+    background: white;
+    border-radius: 20px;
+    flex-direction: column;
+    padding: 30px
+}
+.content{
+    
+    width: 100%;
+    justify-content: space-between;
+    
+}
+.content.disable{
+    cursor: no-drop;
+  }
+.select{
+  
+    
+        padding: 0 10px;
+      
+        
+        width: calc(100% / 3 - 5px);
+      
+
+}
+.content.disable .column{
+    opacity: 0.6;
+    pointer-events: none;
+  }
+select{
+    width: 60px;
+  height: 40px;
+  border: 3px purple solid;
+  border-radius: 5px;
+  outline: none;
+  background: rgb(255, 175, 255);
+  font-size: 15px;
+
+}
+.select:last-child select{
+    font-family: "Roboto", sans-serif;
+  }
+  .wrapper button{
+    width: 100%;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 20px;
+    
+    padding: 17px 0;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: rgb(255, 175, 255);
+    transition: all 0.3s ease;
+  }
+  .wrapper button:hover{
+    width: 110%;
+    border: 3px purple solid;
+    outline: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 20px;
+    
+    padding: 17px 0;
+    margin-top: 20px;
+    border-radius: 10px;
+    background: purple;
+    transition: all 0.3s ease;
+    size: 1.1;
+  }
+
+
+img{
+    max-width: 103px;
+}
+
+@media screen and (max-width: 530px) {
+    .wrapper{
+      padding: 25px 25px 33px;
+      width: 100%;
+    }
+    .wrapper img{
+      max-width: 98px;
+    }
+    .wrapper h1{
+      font-size: 35px;
+      margin: 25px 0;
+    }
+    .select select{
+      height: 48px;
+      font-size: 17px;
+      width: 80px;
+    }
+    .wrapper button{
+      padding: 15px 0;
+      font-size: 18px;
+    }
+  }
+
+
